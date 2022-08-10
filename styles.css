@@ -1,0 +1,43 @@
+* {
+    color: white;
+}
+.grid-container {
+    text-align: center;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 50px 75px 300px 50px;
+    grid-template-rows: 50px 75px 200px;
+    grid-auto-rows: minmax(150px auto);
+    grid-auto-columns: minmax(150px auto);
+    grid-gap: 5px;
+    grid-template-areas: 
+        "header header header"
+        "aside nav nav"
+        "aside main main"
+        "footer footer footer"
+}
+
+.grid-item-1 {
+    background-color: black;
+    grid-area: header;
+}
+
+.grid-item-2 {
+    background-color: orange;
+    grid-area: aside;
+}
+
+.grid-item-3 {
+    background-color: grey;
+    grid-area: main;
+}
+
+.grid-item-4 {
+    background-color: lightsalmon;
+    grid-area: nav;
+}
+
+.grid-item-5 {
+    background-color: black;
+    grid-area: footer;
+}
